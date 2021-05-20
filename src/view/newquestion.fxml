@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="953.0" prefWidth="809.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.NewquestionController">
+   <children>
+      <Text fill="TRANSPARENT" layoutX="292.0" layoutY="65.0" lineSpacing="1.0" stroke="#1b3383" strokeLineCap="ROUND" strokeLineJoin="BEVEL" text="CodeX" textAlignment="CENTER">
+         <effect>
+            <Reflection />
+         </effect>
+         <font>
+            <Font name="Bodoni MT" size="56.0" />
+         </font>
+      </Text>
+      <Label layoutX="54.0" layoutY="149.0" text="Question">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="tquestion" layoutX="54.0" layoutY="193.0" prefHeight="179.0" prefWidth="721.0" />
+      <JFXTextArea fx:id="treponse" layoutX="54.0" layoutY="490.0" prefHeight="197.0" prefWidth="721.0" />
+      <Label layoutX="56.0" layoutY="427.0" text="Réponse">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnsave" layoutX="272.0" layoutY="879.0" onAction="#onSave" prefHeight="43.0" prefWidth="199.0" style="-fx-background-color: #1e3d5f;" text="Sauvegarder" textFill="WHITE" />
+      <Label layoutX="56.0" layoutY="769.0" text="Catégorie">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbcat" layoutX="186.0" layoutY="770.0" prefHeight="31.0" prefWidth="279.0" />
+   </children>
+</AnchorPane>

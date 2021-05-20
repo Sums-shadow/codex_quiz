@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="803.0" prefWidth="1208.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <AnchorPane layoutX="190.0" layoutY="179.0" onMouseClicked="#onInventeur" prefHeight="184.0" prefWidth="225.0" style="-fx-background-color: #e6e6e6;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fx:id="ibg1" fitHeight="184.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true" />
+            <AnchorPane opacity="0.47" prefHeight="184.0" prefWidth="225.0" style="-fx-background-color: #1e3d5f;" />
+            <Label layoutX="19.0" layoutY="53.0" prefHeight="98.0" prefWidth="206.0" text="Inventeur" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="476.0" layoutY="179.0" onMouseClicked="#onPrixTuring" prefHeight="184.0" prefWidth="225.0" style="-fx-background-color: #e6e6e6;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fx:id="ibg2" fitHeight="184.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true" />
+            <AnchorPane opacity="0.47" prefHeight="184.0" prefWidth="225.0" style="-fx-background-color: #1e3d5f;" />
+            <Label layoutX="8.0" layoutY="40.0" prefHeight="108.0" prefWidth="217.0" text="Prix Turing" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="190.0" layoutY="462.0" onMouseClicked="#onEntreprise" prefHeight="184.0" prefWidth="225.0" style="-fx-background-color: #e6e6e6;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fx:id="ibg3" fitHeight="183.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true" />
+            <AnchorPane opacity="0.47" prefHeight="183.0" prefWidth="225.0" style="-fx-background-color: #1e3d5f;" />
+            <Label prefHeight="183.0" prefWidth="225.0" text="Personnage" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="476.0" layoutY="462.0" onMouseClicked="#onCulture" prefHeight="184.0" prefWidth="225.0" style="-fx-background-color: #e6e6e6;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fx:id="ibg4" fitHeight="184.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true" />
+            <AnchorPane opacity="0.47" prefHeight="184.0" prefWidth="225.0" style="-fx-background-color: #1e3d5f;" />
+            <Label prefHeight="184.0" prefWidth="225.0" text="Culture Général" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text fill="TRANSPARENT" layoutX="476.0" layoutY="90.0" lineSpacing="1.0" stroke="#1b3383" strokeLineCap="ROUND" strokeLineJoin="BEVEL" text="CodeX" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="56.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Text>
+      <JFXButton fx:id="btnAddQuestion" layoutX="1078.0" layoutY="690.0" onAction="#onAddQuestion" style="-fx-border-radius: 50; -fx-border-color: #1e3d5f; -fx-border-width: 3px; -fx-background-color: transparent;" text="+">
+         <font>
+            <Font size="38.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <AnchorPane layoutX="756.0" layoutY="462.0" onMouseClicked="#onCulture" prefHeight="184.0" prefWidth="225.0" style="-fx-background-color: #e6e6e6;">
+         <children>
+            <ImageView fx:id="ibg41" fitHeight="184.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true" />
+            <AnchorPane opacity="0.47" prefHeight="184.0" prefWidth="225.0" style="-fx-background-color: #1e3d5f;" />
+            <Label prefHeight="184.0" prefWidth="225.0" text="Culture Général" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="756.0" layoutY="179.0" onMouseClicked="#onGeneration" prefHeight="184.0" prefWidth="225.0" style="-fx-background-color: #e6e6e6;">
+         <children>
+            <ImageView fx:id="ibg21" fitHeight="184.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true" />
+            <AnchorPane opacity="0.47" prefHeight="184.0" prefWidth="225.0" style="-fx-background-color: #1e3d5f;" />
+            <Label layoutX="8.0" layoutY="8.0" prefHeight="183.0" prefWidth="217.0" text="Generation des ordinateurs" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
